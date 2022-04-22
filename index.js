@@ -32,11 +32,13 @@ function makesound(key){
 
 //button animation
 function buttonAnimation(currentKey){
-   var activeKey = document.querySelector("."+currentKey);
 
+   var activeKey = document.querySelector("."+currentKey);
    activeKey.classList.add("pressed");
+   activeKey.style.color = "white";
 
    setTimeout(function(){
      activeKey.classList.remove("pressed");
+     activeKey.style.color = "#DA0463";
    }, 200);
 }
